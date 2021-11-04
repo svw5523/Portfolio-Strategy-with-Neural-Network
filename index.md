@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Explore the portfolio strategy with ML technique in Pharmaceuticals industry
 
-You can use the [editor on GitHub](https://github.com/svw5523/Portfolio-Strategy-with-Neural-Network/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Machine Learning has been a hot topic over the years and was mainly used in technology industry. However, nowadays people in financial industry also start to explore the application of Machine Learning in investment management area. Inspired by Prof. Aldridge’s book [“Big Data Science in Finance”](https://www.bdfbook.com/), our team hope to explore the usage of ML into portfolio construction, specifically to capture the noisy trading signal in daily basis. To better interpret the contribution of the ML technique into constructing the portfolio, we check the portfolio performance with out-of-sample portfolio profit PNL plot.
 
-### Markdown
+In this project, we define the target variable as the one-day ahead return and construct the trading signal by the sign of the predicted return value. If positive, then it shows "buy" signal as 1 and negative shows "sell" signal as -1 in daily basis.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Background and Data Input
+Under the pandemic, pharmaceuticals industry companies played a key role in developing the vaccine and providing medical care program to the society. Our team hope to take a step into exploring their stock performance and related portfolio construction.
 
-```markdown
-Syntax highlighted code block
+Our team selected the following 10 companies from [iShares U.S. Pharmaceuticals ETF (IHE) index](https://www.ishares.com/us/products/239519/ishares-us-pharmaceuticals-etf) and obtained their stock price information from Yahoo! Finance [linked here](https://finance.yahoo.com/). 
 
-# Header 1
-## Header 2
-### Header 3
+| Company | Ticker |
+| ------------- | ------------- |
+| JOHNSON & JOHNSON | JNJ |
+| PFIZER INC | PFE |
+| MERCK & CO INC | MRK |
+| ZOETIS INC CLASS A | ZTS |
+| ELI LILLY | LLY |
+| CATALENT INC | CTLT |
+| VIATRIS INC | VTRS |
+| BRISTOL MYERS SQUIBB | BMY |
+| JAZZ PHARMACEUTICALS | JAZZ |
+| PERRIGO PLC | PRGO |
 
-- Bulleted
-- List
+The portfolio optimization in-sample training period was performed from 01/01/2018 to 12/31/2019.
 
-1. Numbered
-2. List
+### Conclusion
+The result is quite clear that the optimal portfolio selected by Neural Network model strictly outperforms that from the linear regression model or Random Forest Tree model. Backtested the optimized portfolio in out-of-sample period from 01/01/2020 to 10/29/2021 and the portfolio return out-of-sample is around 58.28% from the self-defined initial capital $1,000,000.
 
-**Bold** and _Italic_ and `Code` text
+Our team hope this project will give a simple idea and insight for the applciation of ML techniques in portfolio construction and as the baseline, our team may take a further step into introducing unsupervised learning technique, such as PCA approach in features selection and variance reduction.  
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/svw5523/Portfolio-Strategy-with-Neural-Network/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Here, the Python code accounts for porfolio optimization with neural network model part.
