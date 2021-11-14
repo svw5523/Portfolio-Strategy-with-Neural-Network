@@ -7,7 +7,7 @@ Machine Learning has been a hot topic over the years and was mainly used in tech
 In this project, we define the target variable as the one-day ahead return and construct the trading signal by the sign of the predicted return value. If positive, then it shows "buy" signal as 1 and negative shows "sell" signal as -1 in daily basis.
 
 ### Background and Data Input
-Under the pandemic, pharmaceuticals industry companies played a key role in developing the vaccine and providing medical care program to the society. Our team hope to take a step into exploring their stock performance and related portfolio construction.
+Under the pandemic, pharmaceuticals industry companies played a key role in developing the vaccine and providing medical care program to the society. Our team hopes to take a step into exploring their stock performance and related portfolio construction.
 
 Our team selected the following 10 companies from [iShares U.S. Pharmaceuticals ETF (IHE) index](https://www.ishares.com/us/products/239519/ishares-us-pharmaceuticals-etf) and obtained their stock price information from Yahoo! Finance [linked here](https://finance.yahoo.com/). 
 
@@ -29,6 +29,6 @@ The portfolio optimization in-sample training period was performed from 01/01/20
 ### Conclusion
 The result is quite clear that the optimal portfolio selected by Neural Network model strictly outperforms that from the linear regression model or Random Forest Tree model. Backtested the optimized portfolio in out-of-sample period from 01/01/2020 to 10/29/2021 and the portfolio return out-of-sample is around 58.28% from the self-defined initial capital $1,000,000.
 
-Our team hope this project will give a simple idea and insight for the applciation of ML techniques in portfolio construction and as the baseline, our team may take a further step into introducing unsupervised learning technique, such as PCA approach in features selection and variance reduction.  
+Our team hopes this project will give a simple idea and insight for the application of ML techniques in portfolio construction and as the baseline, our team may take a further step into introducing unsupervised learning technique, such as PCA approach in features selection and variance reduction.  
 
 - Here, the Python code accounts for porfolio optimization with neural network model part.
