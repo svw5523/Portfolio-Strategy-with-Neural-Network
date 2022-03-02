@@ -2,9 +2,9 @@
 
 ### Introduction
 
-Machine Learning has been a hot topic over the years and was mainly used in technology industry. However, nowadays people in financial industry also start to explore the application of Machine Learning in investment management area. Inspired by Prof. Aldridge’s book [“Big Data Science in Finance”](https://www.bdfbook.com/), our team hope to explore the usage of ML into portfolio construction, specifically to capture the noisy trading signal in daily basis. To better interpret the contribution of the ML technique into constructing the portfolio, we check the portfolio performance with out-of-sample portfolio profit PNL plot.
+Machine Learning has been a hot topic over the years and was mainly used in technology industry. However, nowadays people in financial industry also start to explore the application of Machine Learning in investment management area. Inspired by Prof. Aldridge’s book [“Big Data Science in Finance”](https://www.bdfbook.com/), our team hope to explore the usage of ML into portfolio construction, specifically to capture the noisy trading signal on daily basis. To better interpret the contribution of the ML technique into constructing the portfolio, we check the portfolio performance with out-of-sample portfolio profit PNL plot.
 
-In this project, we define the target variable as the one-day ahead return and construct the trading signal by the sign of the predicted return value. If positive, then it shows "buy" signal as 1 and negative shows "sell" signal as -1 in daily basis.
+In this project, we define the target variable as the one-day ahead return and construct the trading signal by the sign of the predicted return value. If positive, then it shows "buy" signal as 1 and negative shows "sell" signal as -1 on daily basis.
 
 ### Background and Data Input
 Under the pandemic, pharmaceuticals industry companies played a key role in developing the vaccine and providing medical care program to the society. Our team hopes to take a step into exploring their stock performance and related portfolio construction.
