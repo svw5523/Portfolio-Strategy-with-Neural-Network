@@ -1,4 +1,4 @@
-# Explore the portfolio strategy with ML technique in Pharmaceuticals industry
+# Explore the portfolio strategy with ML technique in Pharmaceuticals industr
 
 ### Introduction
 
