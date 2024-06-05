@@ -9,7 +9,7 @@ In this project, we define the target variable as the one-day ahead return and c
 ### Background and Data Input
 Under the pandemic, pharmaceuticals industry companies played a key role in developing the vaccine and providing medical care program to the society. Our team hopes to take a step into exploring their stock performance and related portfolio construction.
 
-Our team selected the following 10 companies from [iShares U.S. Pharmaceuticals ETF (IHE) index](https://www.ishares.com/us/products/239519/ishares-us-pharmaceuticals-etf) and obtained their stock price information from Yahoo! Finance [linked here](https://finance.yahoo.com/). 
+Our team selected the following 10 companies from [iShares U.S. Pharmaceuticals ETF (IHE) index](https://www.ishares.com/us/products/239519/ishares-us-pharmaceuticals-etf) and obtained their stock price information from Yahoo! Finance [links here](https://finance.yahoo.com/). 
 
 | Company | Ticker |
 | ------------- | ------------- |
